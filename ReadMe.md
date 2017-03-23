@@ -1,8 +1,8 @@
-# Welcome to Pay-A-Way Carpolling Application
+# Welcome to Pay-A-Way Carpooling Application
 
 This is an application for car pooling service with social networking integration.
 
-Provide the convenience and flexibility of car pool: passengers can detect drivers who are starting at a nearby location with a routine that will pass by the destination for the passengers. People will have the option to make friends after trips by mutual interests. This added a social media feature for the business.
+Provide the convenience and flexibility of car pool: passengers can select drivers who are starting at a nearby location with a routine that will pass by the destination for the passengers. People will have the option to make friends after trips by mutual interests. This added a social media feature for the business.
 
 With the social media feature added, the business can be expanded by interesting more users. The roles between passengers and drivers are fully interchangeable. This concept is introduced to making it feasible for the social media feature, from a psychological view point.
 
