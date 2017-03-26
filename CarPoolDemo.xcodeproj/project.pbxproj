@@ -17,6 +17,7 @@
 		80C233141E8758F500C39FFA /* CPLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */; };
 		80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233151E87591700C39FFA /* CPMapViewController.swift */; };
 		80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */; };
+		80C2331B1E882E4800C39FFA /* InternalFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C233191E882E4800C39FFA /* InternalFlow.storyboard */; };
 		80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF51E85602600A932EB /* CPExtensions.swift */; };
 		80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF71E856D0300A932EB /* CPDemoEntity.swift */; };
 		80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF91E856D8900A932EB /* CPDataHandler.swift */; };
@@ -41,6 +42,7 @@
 		80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLeftMenuViewController.swift; sourceTree = "<group>"; };
 		80C233151E87591700C39FFA /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMapViewController.swift; sourceTree = "<group>"; };
 		80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHistoryViewController.swift; sourceTree = "<group>"; };
+		80C2331A1E882E4800C39FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InternalFlow.storyboard; sourceTree = "<group>"; };
 		80C28CF51E85602600A932EB /* CPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPExtensions.swift; sourceTree = "<group>"; };
 		80C28CF71E856D0300A932EB /* CPDemoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDemoEntity.swift; sourceTree = "<group>"; };
 		80C28CF91E856D8900A932EB /* CPDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataHandler.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				801872381E8487710013A4E3 /* Models */,
 				801872371E8487630013A4E3 /* Controllers */,
 				80D1BDF91E840CB100F35E65 /* Main.storyboard */,
+				80C233191E882E4800C39FFA /* InternalFlow.storyboard */,
 				80D1BDFC1E840CB100F35E65 /* Assets.xcassets */,
 				80D1BDFE1E840CB100F35E65 /* LaunchScreen.storyboard */,
 				80D1BE011E840CB100F35E65 /* Info.plist */,
@@ -231,6 +234,7 @@
 				80D1BE001E840CB100F35E65 /* LaunchScreen.storyboard in Resources */,
 				80D1BDFD1E840CB100F35E65 /* Assets.xcassets in Resources */,
 				80D1BDFB1E840CB100F35E65 /* Main.storyboard in Resources */,
+				80C2331B1E882E4800C39FFA /* InternalFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +267,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		80C233191E882E4800C39FFA /* InternalFlow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C2331A1E882E4800C39FFA /* Base */,
+			);
+			name = InternalFlow.storyboard;
+			sourceTree = "<group>";
+		};
 		80D1BDF91E840CB100F35E65 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
