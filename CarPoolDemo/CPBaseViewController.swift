@@ -31,14 +31,14 @@ class CPBaseViewController: UIViewController {
         let keyInfo = notification.userInfo
         var keyboardFrame = keyInfo?[UIKeyboardFrameEndUserInfoKey] as! CGRect
         keyboardFrame = view.convert(keyboardFrame, from: nil)
-        let intersect = keyboardFrame.intersection(view.bounds)
-        let duration = keyInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        _ = keyboardFrame.intersection(view.bounds)
+        _ = keyInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
         
     }
     
     func keyboardWillHide(_ notification: Notification){
         let keyInfo = notification.userInfo
-        let duration = keyInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        _ = keyInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
         
     }
     

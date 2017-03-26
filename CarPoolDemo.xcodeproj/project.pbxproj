@@ -13,6 +13,10 @@
 		8018723A1E848D830013A4E3 /* CPIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801872391E848D830013A4E3 /* CPIntroViewController.swift */; };
 		8018723F1E8491200013A4E3 /* CPParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8018723E1E8491200013A4E3 /* CPParentViewController.swift */; };
 		801872411E8491370013A4E3 /* CPChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801872401E8491370013A4E3 /* CPChildViewController.swift */; };
+		80C233111E87578E00C39FFA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C233101E87578E00C39FFA /* SWRevealViewController.m */; };
+		80C233141E8758F500C39FFA /* CPLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */; };
+		80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233151E87591700C39FFA /* CPMapViewController.swift */; };
+		80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */; };
 		80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF51E85602600A932EB /* CPExtensions.swift */; };
 		80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF71E856D0300A932EB /* CPDemoEntity.swift */; };
 		80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF91E856D8900A932EB /* CPDataHandler.swift */; };
@@ -31,6 +35,12 @@
 		801872391E848D830013A4E3 /* CPIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPIntroViewController.swift; sourceTree = "<group>"; };
 		8018723E1E8491200013A4E3 /* CPParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPParentViewController.swift; sourceTree = "<group>"; };
 		801872401E8491370013A4E3 /* CPChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPChildViewController.swift; sourceTree = "<group>"; };
+		80C2330E1E87578E00C39FFA /* CarPoolDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarPoolDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		80C2330F1E87578E00C39FFA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		80C233101E87578E00C39FFA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLeftMenuViewController.swift; sourceTree = "<group>"; };
+		80C233151E87591700C39FFA /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMapViewController.swift; sourceTree = "<group>"; };
+		80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHistoryViewController.swift; sourceTree = "<group>"; };
 		80C28CF51E85602600A932EB /* CPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPExtensions.swift; sourceTree = "<group>"; };
 		80C28CF71E856D0300A932EB /* CPDemoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDemoEntity.swift; sourceTree = "<group>"; };
 		80C28CF91E856D8900A932EB /* CPDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataHandler.swift; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 				801872391E848D830013A4E3 /* CPIntroViewController.swift */,
 				80C28CFD1E8593C900A932EB /* Login&SignUp */,
 				8018723D1E8490FC0013A4E3 /* DemoViewControllers */,
+				80C233121E8758A800C39FFA /* SideMenu */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -82,6 +93,25 @@
 				801872401E8491370013A4E3 /* CPChildViewController.swift */,
 			);
 			name = DemoViewControllers;
+			sourceTree = "<group>";
+		};
+		80C2330D1E87577300C39FFA /* SideMenuLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				80C2330F1E87578E00C39FFA /* SWRevealViewController.h */,
+				80C233101E87578E00C39FFA /* SWRevealViewController.m */,
+			);
+			name = SideMenuLibrary;
+			sourceTree = "<group>";
+		};
+		80C233121E8758A800C39FFA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */,
+				80C233151E87591700C39FFA /* CPMapViewController.swift */,
+				80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */,
+			);
+			name = SideMenu;
 			sourceTree = "<group>";
 		};
 		80C28CFD1E8593C900A932EB /* Login&SignUp */ = {
@@ -123,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				80D1BDF51E840CB100F35E65 /* AppDelegate.swift */,
+				80C2330E1E87578E00C39FFA /* CarPoolDemo-Bridging-Header.h */,
+				80C2330D1E87577300C39FFA /* SideMenuLibrary */,
 				80C28CFE1E85AA4100A932EB /* Utils */,
 				801872381E8487710013A4E3 /* Models */,
 				801872371E8487630013A4E3 /* Controllers */,
@@ -168,6 +200,7 @@
 					80D1BDF11E840CB100F35E65 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UM83DWBEMG;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -208,15 +241,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C233111E87578E00C39FFA /* SWRevealViewController.m in Sources */,
+				80C233141E8758F500C39FFA /* CPLeftMenuViewController.swift in Sources */,
 				8018723A1E848D830013A4E3 /* CPIntroViewController.swift in Sources */,
 				801872321E8487030013A4E3 /* CPDemoViewController.swift in Sources */,
 				801872341E8487110013A4E3 /* CPLoginViewController.swift in Sources */,
 				8018723F1E8491200013A4E3 /* CPParentViewController.swift in Sources */,
+				80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */,
 				80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */,
 				801872411E8491370013A4E3 /* CPChildViewController.swift in Sources */,
 				80C28CFC1E858D4A00A932EB /* CPConstants.swift in Sources */,
 				80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */,
 				801872361E8487250013A4E3 /* CPSignUpViewController.swift in Sources */,
+				80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */,
 				80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */,
 				80C28D011E862F5B00A932EB /* CPBaseViewController.swift in Sources */,
 				80D1BDF61E840CB100F35E65 /* AppDelegate.swift in Sources */,
@@ -339,12 +376,16 @@
 		80D1BE051E840CB100F35E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UM83DWBEMG;
 				INFOPLIST_FILE = CarPoolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sato.CarPoolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarPoolDemo/CarPoolDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -352,12 +393,15 @@
 		80D1BE061E840CB100F35E65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UM83DWBEMG;
 				INFOPLIST_FILE = CarPoolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sato.CarPoolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarPoolDemo/CarPoolDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
