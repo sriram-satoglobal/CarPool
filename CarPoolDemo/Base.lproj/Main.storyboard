@@ -39,7 +39,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="hFy-xT-Mus" kind="show" id="MIu-O0-fbr"/>
+                                    <segue destination="hFy-xT-Mus" kind="show" identifier="goToDemoSegue" id="MIu-O0-fbr"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payAWay" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-j4-Z5H">
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="-646"/>
+            <point key="canvasLocation" x="519" y="-645"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="NO7-rR-bk8">
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="TLy-0t-znE" kind="embed" id="Qwj-hV-ROh"/>
+                                            <segue destination="TLy-0t-znE" kind="embed" identifier="pageControllerSegue" id="Qwj-hV-ROh"/>
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcZ-vK-bUb">
@@ -104,7 +104,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="dzc-bj-P40" kind="show" id="eMk-5m-DdL"/>
+                                            <segue destination="dzc-bj-P40" kind="show" identifier="goTSignInSegue" id="eMk-5m-DdL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -278,7 +278,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="D0n-xh-0yT" kind="show" id="wQL-9W-tJA"/>
+                                            <segue destination="D0n-xh-0yT" kind="show" identifier="goToInternalFlowSegue" id="wQL-9W-tJA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jdn-NZ-HzO">
@@ -310,7 +310,7 @@
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="udg-R8-lcd" kind="show" id="OJm-o0-SeE"/>
+                                            <segue destination="udg-R8-lcd" kind="show" identifier="goToSignUpSegue" id="OJm-o0-SeE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -676,7 +676,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZz-Sg-0D1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127.2" y="-644.52773613193403"/>
+            <point key="canvasLocation" x="-198" y="-645"/>
         </scene>
         <!--InternalFlow-->
         <scene sceneID="Dgp-vC-KWD">
@@ -684,7 +684,7 @@
                 <viewControllerPlaceholder storyboardName="InternalFlow" id="D0n-xh-0yT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zro-Eu-Nd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3825" y="-1080"/>
+            <point key="canvasLocation" x="2740" y="-655"/>
         </scene>
     </scenes>
     <resources>

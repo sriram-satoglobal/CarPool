@@ -18,6 +18,11 @@
 		80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233151E87591700C39FFA /* CPMapViewController.swift */; };
 		80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */; };
 		80C2331B1E882E4800C39FFA /* InternalFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C233191E882E4800C39FFA /* InternalFlow.storyboard */; };
+		80C2331E1E8940A100C39FFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C2331D1E8940A100C39FFA /* MapKit.framework */; };
+		80C233211E8942CF00C39FFA /* CPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233201E8942CF00C39FFA /* CPTextField.swift */; };
+		80C233241E8954FB00C39FFA /* CPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233231E8954FB00C39FFA /* CPSearchViewController.swift */; };
+		80C233261E89559E00C39FFA /* CPLocationSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */; };
+		80C233281E89A36100C39FFA /* CPSelectRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */; };
 		80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF51E85602600A932EB /* CPExtensions.swift */; };
 		80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF71E856D0300A932EB /* CPDemoEntity.swift */; };
 		80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF91E856D8900A932EB /* CPDataHandler.swift */; };
@@ -43,6 +48,11 @@
 		80C233151E87591700C39FFA /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMapViewController.swift; sourceTree = "<group>"; };
 		80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHistoryViewController.swift; sourceTree = "<group>"; };
 		80C2331A1E882E4800C39FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InternalFlow.storyboard; sourceTree = "<group>"; };
+		80C2331D1E8940A100C39FFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		80C233201E8942CF00C39FFA /* CPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTextField.swift; sourceTree = "<group>"; };
+		80C233231E8954FB00C39FFA /* CPSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSearchViewController.swift; sourceTree = "<group>"; };
+		80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLocationSearchCell.swift; sourceTree = "<group>"; };
+		80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSelectRideViewController.swift; sourceTree = "<group>"; };
 		80C28CF51E85602600A932EB /* CPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPExtensions.swift; sourceTree = "<group>"; };
 		80C28CF71E856D0300A932EB /* CPDemoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDemoEntity.swift; sourceTree = "<group>"; };
 		80C28CF91E856D8900A932EB /* CPDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataHandler.swift; sourceTree = "<group>"; };
@@ -61,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C2331E1E8940A100C39FFA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,11 +120,38 @@
 		80C233121E8758A800C39FFA /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				80C233221E8954E200C39FFA /* Map */,
 				80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */,
-				80C233151E87591700C39FFA /* CPMapViewController.swift */,
 				80C233171E875A0F00C39FFA /* CPHistoryViewController.swift */,
 			);
 			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		80C2331C1E8940A100C39FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80C2331D1E8940A100C39FFA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80C2331F1E8942AD00C39FFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C233201E8942CF00C39FFA /* CPTextField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C233221E8954E200C39FFA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				80C233151E87591700C39FFA /* CPMapViewController.swift */,
+				80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */,
+				80C233231E8954FB00C39FFA /* CPSearchViewController.swift */,
+				80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		80C28CFD1E8593C900A932EB /* Login&SignUp */ = {
@@ -140,6 +178,7 @@
 			children = (
 				80D1BDF41E840CB100F35E65 /* CarPoolDemo */,
 				80D1BDF31E840CB100F35E65 /* Products */,
+				80C2331C1E8940A100C39FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +193,7 @@
 		80D1BDF41E840CB100F35E65 /* CarPoolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				80C2331F1E8942AD00C39FFA /* Views */,
 				80D1BDF51E840CB100F35E65 /* AppDelegate.swift */,
 				80C2330E1E87578E00C39FFA /* CarPoolDemo-Bridging-Header.h */,
 				80C2330D1E87577300C39FFA /* SideMenuLibrary */,
@@ -251,6 +291,7 @@
 				801872321E8487030013A4E3 /* CPDemoViewController.swift in Sources */,
 				801872341E8487110013A4E3 /* CPLoginViewController.swift in Sources */,
 				8018723F1E8491200013A4E3 /* CPParentViewController.swift in Sources */,
+				80C233211E8942CF00C39FFA /* CPTextField.swift in Sources */,
 				80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */,
 				80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */,
 				801872411E8491370013A4E3 /* CPChildViewController.swift in Sources */,
@@ -258,7 +299,10 @@
 				80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */,
 				801872361E8487250013A4E3 /* CPSignUpViewController.swift in Sources */,
 				80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */,
+				80C233281E89A36100C39FFA /* CPSelectRideViewController.swift in Sources */,
+				80C233261E89559E00C39FFA /* CPLocationSearchCell.swift in Sources */,
 				80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */,
+				80C233241E8954FB00C39FFA /* CPSearchViewController.swift in Sources */,
 				80C28D011E862F5B00A932EB /* CPBaseViewController.swift in Sources */,
 				80D1BDF61E840CB100F35E65 /* AppDelegate.swift in Sources */,
 			);
