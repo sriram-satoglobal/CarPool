@@ -2,8 +2,8 @@
 //  CPMapViewController.swift
 //  CarPoolDemo
 //
-//  Created by Sriram Reddy on 3/25/17.
-//  Copyright © 2017 SGS Inc. All rights reserved.
+//  Created by Tejaswi Yarlagadda on 3/25/17.
+//  Copyright © 2017 Demo Inc. All rights reserved.
 //
 
 import UIKit
