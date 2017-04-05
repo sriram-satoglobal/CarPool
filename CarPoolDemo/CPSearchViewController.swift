@@ -29,6 +29,8 @@ class CPSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchCompleter.delegate = self
+        resultsTableView.rowHeight = UITableViewAutomaticDimension
+        resultsTableView.estimatedRowHeight = 40
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,6 +78,8 @@ extension CPSearchViewController: UITableViewDataSource {
 extension CPSearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let locationCompletion = locationsArray[indexPath.row]
+        locationsArray.removeAll()
+        tableView.reloadData()
         removeObserver()
         searchTF.text = locationCompletion.title
         searchTF.resignFirstResponder()
@@ -85,7 +89,7 @@ extension CPSearchViewController: UITableViewDelegate {
         search.start { (response, error) in
             if error == nil {
                 let coordinate = response?.mapItems[0].placemark.coordinate
-                self.delegate?.didSelectResult(withSearchCompletion: self.locationsArray[indexPath.row], coordinate!)
+                self.delegate?.didSelectResult(withSearchCompletion: locationCompletion, coordinate!)
             } else {
               print(error!)
             }

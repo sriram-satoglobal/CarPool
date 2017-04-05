@@ -11,11 +11,13 @@ import UIKit
 class CPDataHandler {
     static let shared = CPDataHandler()
     var demoEntities: [CPDemoEntity] = []
+    var rideOptionEntities: [CPRideOptionEntity] = []
     
     func setUpData(completionHandler:@escaping () -> Void) {
         let queue = DispatchQueue(label: "com.carpool.serialQueue")
         queue.async {
             self.setUpDemoEntities()
+            self.setUpRideOptions()
             completionHandler()
         }
     }
@@ -37,4 +39,27 @@ class CPDataHandler {
         entity3.image = #imageLiteral(resourceName: "demo_fun")
         demoEntities = [entity1, entity2, entity3]
     }
+    
+    private func setUpRideOptions() {
+        let entity1 = CPRideOptionEntity()
+        entity1.title = "Ride Share"
+        entity1.description = "One + One"
+        entity1.image = #imageLiteral(resourceName: "ride_share")
+        entity1.activeStars = 5
+        
+        let entity2 = CPRideOptionEntity()
+        entity2.title = "Personal"
+        entity2.description = "Private"
+        entity2.image = #imageLiteral(resourceName: "ride_personnel")
+        entity2.activeStars = 4
+        
+        let entity3 = CPRideOptionEntity()
+        entity3.title = "The friendly bunch"
+        entity3.description = "Friends"
+        entity3.image = #imageLiteral(resourceName: "ride_friends")
+        entity3.activeStars = 4
+        
+        rideOptionEntities = [entity1, entity2, entity3]
+    }
+    
 }

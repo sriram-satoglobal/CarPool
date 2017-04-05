@@ -13,7 +13,7 @@ class CPMapViewController: CPBaseViewController {
 
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
     
-    let nextBarButton: UIBarButtonItem = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(goNext))
+    var nextBarButton: UIBarButtonItem? = nil
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -21,8 +21,9 @@ class CPMapViewController: CPBaseViewController {
     var didBecomeActiveToken: NSObjectProtocol?
     var serachViewController: CPSearchViewController?
     var selectedRoute: MKRoute?
-    var currentOverlay: MKOverlay?
     
+    var currentOverlay: MKOverlay?
+    var currentViewingAnnotations: [MKAnnotation] = []
     
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var leftSpaceConstraint: NSLayoutConstraint!
@@ -35,6 +36,7 @@ class CPMapViewController: CPBaseViewController {
         super.viewDidLoad()
         setUpRevealingMenuPattern()
         locationManager.delegate = self
+        nextBarButton  = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(goNext))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,7 +88,6 @@ class CPMapViewController: CPBaseViewController {
         navigationController?.setNavigationBarHidden(makeVisible, animated: true)
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.1, options: .curveEaseIn, animations: {
             self.view.layoutIfNeeded()
-            self.containerView.layoutIfNeeded()
         }, completion: nil)
     }
     
@@ -96,8 +97,8 @@ class CPMapViewController: CPBaseViewController {
             self.serachViewController = searchVC
             self.serachViewController?.delegate = self
         }
-        else if (segue.identifier == "toRideSegueIdentifier") {
-            let selectRideVC = segue.destination  as! CPSelectRideViewController
+        else if (segue.identifier == "selectRideType") {
+            let selectRideVC = segue.destination  as! CPSelectRideOptionViewController
             selectRideVC.selectedRoute = selectedRoute
         }
     }
@@ -107,23 +108,25 @@ class CPMapViewController: CPBaseViewController {
         
         if currentOverlay != nil {
             mapView.remove(currentOverlay!)
-            
+            mapView.removeAnnotations(currentViewingAnnotations)
         }
         
         let sourceAnnotation = MKPointAnnotation()
+        sourceAnnotation.title = sourcePlacemark.title
         if let location = sourcePlacemark.location {
             sourceAnnotation.coordinate = location.coordinate
         }
         
         
         let destinationAnnotation = MKPointAnnotation()
-        
+        destinationAnnotation.title = destinationPlacemark.title
         if let location = destinationPlacemark.location {
             destinationAnnotation.coordinate = location.coordinate
         }
         
-        // 6.
-        self.mapView.showAnnotations([sourceAnnotation,destinationAnnotation], animated: true )
+        currentViewingAnnotations = [sourceAnnotation, destinationAnnotation]
+        
+        self.mapView.showAnnotations(currentViewingAnnotations, animated: true )
         
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
         let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
@@ -139,22 +142,21 @@ class CPMapViewController: CPBaseViewController {
                 if let error = error {
                     print("Error: \(error)")
                 }
-                
                 return
             }
             
             let route = response.routes[0]
+            self.selectedRoute = route
             self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
             
             let rect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
             self.navigationItem.rightBarButtonItem = self.nextBarButton
         }
-        
     }
     
     func goNext() {
-        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "selectRideType", sender: self)
     }
 }
 

@@ -13,6 +13,10 @@
 		8018723A1E848D830013A4E3 /* CPIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801872391E848D830013A4E3 /* CPIntroViewController.swift */; };
 		8018723F1E8491200013A4E3 /* CPParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8018723E1E8491200013A4E3 /* CPParentViewController.swift */; };
 		801872411E8491370013A4E3 /* CPChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801872401E8491370013A4E3 /* CPChildViewController.swift */; };
+		806FA4961E8F146600904389 /* CPSelectRideOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA4951E8F146600904389 /* CPSelectRideOptionViewController.swift */; };
+		806FA4991E8F187C00904389 /* CPRideOptionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA4981E8F187C00904389 /* CPRideOptionEntity.swift */; };
+		806FA49B1E8F1F6100904389 /* CPRideOptionVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA49A1E8F1F6100904389 /* CPRideOptionVIewController.swift */; };
+		806FA49D1E8F217A00904389 /* CPSelectRideParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA49C1E8F217A00904389 /* CPSelectRideParentViewController.swift */; };
 		80C233111E87578E00C39FFA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C233101E87578E00C39FFA /* SWRevealViewController.m */; };
 		80C233141E8758F500C39FFA /* CPLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233131E8758F500C39FFA /* CPLeftMenuViewController.swift */; };
 		80C233161E87591700C39FFA /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233151E87591700C39FFA /* CPMapViewController.swift */; };
@@ -22,7 +26,7 @@
 		80C233211E8942CF00C39FFA /* CPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233201E8942CF00C39FFA /* CPTextField.swift */; };
 		80C233241E8954FB00C39FFA /* CPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233231E8954FB00C39FFA /* CPSearchViewController.swift */; };
 		80C233261E89559E00C39FFA /* CPLocationSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */; };
-		80C233281E89A36100C39FFA /* CPSelectRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */; };
+		80C233281E89A36100C39FFA /* CPSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C233271E89A36100C39FFA /* CPSummaryViewController.swift */; };
 		80C28CF61E85602600A932EB /* CPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF51E85602600A932EB /* CPExtensions.swift */; };
 		80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF71E856D0300A932EB /* CPDemoEntity.swift */; };
 		80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28CF91E856D8900A932EB /* CPDataHandler.swift */; };
@@ -41,6 +45,10 @@
 		801872391E848D830013A4E3 /* CPIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPIntroViewController.swift; sourceTree = "<group>"; };
 		8018723E1E8491200013A4E3 /* CPParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPParentViewController.swift; sourceTree = "<group>"; };
 		801872401E8491370013A4E3 /* CPChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPChildViewController.swift; sourceTree = "<group>"; };
+		806FA4951E8F146600904389 /* CPSelectRideOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSelectRideOptionViewController.swift; sourceTree = "<group>"; };
+		806FA4981E8F187C00904389 /* CPRideOptionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRideOptionEntity.swift; sourceTree = "<group>"; };
+		806FA49A1E8F1F6100904389 /* CPRideOptionVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRideOptionVIewController.swift; sourceTree = "<group>"; };
+		806FA49C1E8F217A00904389 /* CPSelectRideParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSelectRideParentViewController.swift; sourceTree = "<group>"; };
 		80C2330E1E87578E00C39FFA /* CarPoolDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarPoolDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		80C2330F1E87578E00C39FFA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		80C233101E87578E00C39FFA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -52,7 +60,7 @@
 		80C233201E8942CF00C39FFA /* CPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTextField.swift; sourceTree = "<group>"; };
 		80C233231E8954FB00C39FFA /* CPSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSearchViewController.swift; sourceTree = "<group>"; };
 		80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLocationSearchCell.swift; sourceTree = "<group>"; };
-		80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSelectRideViewController.swift; sourceTree = "<group>"; };
+		80C233271E89A36100C39FFA /* CPSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSummaryViewController.swift; sourceTree = "<group>"; };
 		80C28CF51E85602600A932EB /* CPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPExtensions.swift; sourceTree = "<group>"; };
 		80C28CF71E856D0300A932EB /* CPDemoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDemoEntity.swift; sourceTree = "<group>"; };
 		80C28CF91E856D8900A932EB /* CPDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataHandler.swift; sourceTree = "<group>"; };
@@ -108,6 +116,17 @@
 			name = DemoViewControllers;
 			sourceTree = "<group>";
 		};
+		806FA4971E8F180800904389 /* Ride Options */ = {
+			isa = PBXGroup;
+			children = (
+				806FA4951E8F146600904389 /* CPSelectRideOptionViewController.swift */,
+				806FA49A1E8F1F6100904389 /* CPRideOptionVIewController.swift */,
+				806FA4981E8F187C00904389 /* CPRideOptionEntity.swift */,
+				806FA49C1E8F217A00904389 /* CPSelectRideParentViewController.swift */,
+			);
+			name = "Ride Options";
+			sourceTree = "<group>";
+		};
 		80C2330D1E87577300C39FFA /* SideMenuLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				80C233151E87591700C39FFA /* CPMapViewController.swift */,
-				80C233271E89A36100C39FFA /* CPSelectRideViewController.swift */,
 				80C233231E8954FB00C39FFA /* CPSearchViewController.swift */,
 				80C233251E89559E00C39FFA /* CPLocationSearchCell.swift */,
+				806FA4971E8F180800904389 /* Ride Options */,
+				80C233271E89A36100C39FFA /* CPSummaryViewController.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -286,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C233111E87578E00C39FFA /* SWRevealViewController.m in Sources */,
+				806FA4961E8F146600904389 /* CPSelectRideOptionViewController.swift in Sources */,
+				806FA4991E8F187C00904389 /* CPRideOptionEntity.swift in Sources */,
 				80C233141E8758F500C39FFA /* CPLeftMenuViewController.swift in Sources */,
 				8018723A1E848D830013A4E3 /* CPIntroViewController.swift in Sources */,
 				801872321E8487030013A4E3 /* CPDemoViewController.swift in Sources */,
@@ -299,11 +321,13 @@
 				80C28CF81E856D0300A932EB /* CPDemoEntity.swift in Sources */,
 				801872361E8487250013A4E3 /* CPSignUpViewController.swift in Sources */,
 				80C233181E875A0F00C39FFA /* CPHistoryViewController.swift in Sources */,
-				80C233281E89A36100C39FFA /* CPSelectRideViewController.swift in Sources */,
+				80C233281E89A36100C39FFA /* CPSummaryViewController.swift in Sources */,
+				806FA49D1E8F217A00904389 /* CPSelectRideParentViewController.swift in Sources */,
 				80C233261E89559E00C39FFA /* CPLocationSearchCell.swift in Sources */,
 				80C28CFA1E856D8900A932EB /* CPDataHandler.swift in Sources */,
 				80C233241E8954FB00C39FFA /* CPSearchViewController.swift in Sources */,
 				80C28D011E862F5B00A932EB /* CPBaseViewController.swift in Sources */,
+				806FA49B1E8F1F6100904389 /* CPRideOptionVIewController.swift in Sources */,
 				80D1BDF61E840CB100F35E65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
